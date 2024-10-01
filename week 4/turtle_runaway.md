@@ -1,9 +1,9 @@
 # Runaway Turtle Game - 설명서
 
 <div>
-    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway1.png" alt="게임 화면 1" width="30%" style="margin-right: 10px;"/>
-    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway2.png" alt="게임 화면 2" width="30%" style="margin-right: 10px;"/>
-    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway3.png" alt="게임 화면 3" width="30%" />
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway1.png" alt="게임 화면 1" width="33%" style="margin-right: 10px;"/>
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway2.png" alt="게임 화면 2" width="33%" style="margin-right: 10px;"/>
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway3.png" alt="게임 화면 3" width="33%" />
 </div>
 
 ## 게임 설명
