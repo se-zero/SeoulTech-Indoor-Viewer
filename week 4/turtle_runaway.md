@@ -1,6 +1,10 @@
 # Runaway Turtle Game - 설명서
 
-![Runaway Turtle](https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway2.png)
+<div>
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway1.png" alt="게임 화면 1" width="200" style="margin-right: 10px;"/>
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway2.png" alt="게임 화면 2" width="200" style="margin-right: 10px;"/>
+    <img src="https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway3.png" alt="게임 화면 3" width="200" />
+</div>
 
 ## 게임 설명
 Runaway Turtle Game은 **Chaser(추적자)**와 **Runner(도망자)**가 등장하는 추격 게임입니다. 플레이어는 **Chaser**를 조종하여 **Runner**를 쫓아 잡아 점수를 얻습니다. 추가적으로 **Intelligent Turtle**이 등장하여 **Chaser**를 쫓습니다. **Intelligent Turtle**에게 잡히면 점수가 감소합니다.
@@ -25,11 +29,6 @@ Runaway Turtle Game은 **Chaser(추적자)**와 **Runner(도망자)**가 등장�
 1. **타이머**: 게임은 60초 동안 진행됩니다. 시간이 경과하면 게임이 종료되며 점수가 표시됩니다.
 2. **Intelligent Turtle**: 추가적인 추적자로 등장하며, **Chaser**를 쫓아다닙니다. **Intelligent Turtle**에게 잡히면 점수가 감소합니다.
 3. **시작 화면과 종료 화면**: 
-   - 게임 시작 전에 규칙 설명이 화면에 나타나고, 아무 키나 누르면 게임이 시작됩니다.
+   - 게임 시작 전에 규칙 설명이 화면에 나타나고, 스페이스바 키를 누르면 게임이 시작됩니다.
    - 게임이 끝난 후에는 점수가 화면 중앙에 표시됩니다.
-
-## 게임 코드에서 추가된 주요 기능
-- **타이머 추가**: 60초 타이머가 설정되어 시간이 지나면 게임이 종료되도록 설계되었습니다.
-- **Intelligent Turtle의 동작 구현**: Intelligent Turtle은 **Chaser**의 위치를 추적하고 그 방향으로 움직여 **Chaser**를 잡으려고 합니다.
-- **시작 및 종료 화면**: 게임 시작 전에 안내 메시지가 뜨고, 종료 후에 최종 점수가 화면에 출력됩니다.
 
