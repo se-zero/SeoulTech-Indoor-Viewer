@@ -1,5 +1,7 @@
 # Runaway Turtle Game - 설명서
 
+![Runaway Turtle](https://github.com/se-zero/seyeong/blob/main/week%204/turtle_runaway2.png)
+
 ## 게임 설명
 Runaway Turtle Game은 **Chaser(추적자)**와 **Runner(도망자)**가 등장하는 추격 게임입니다. 플레이어는 **Chaser**를 조종하여 **Runner**를 쫓아 잡아 점수를 얻습니다. 추가적으로 **Intelligent Turtle**이 등장하여 **Chaser**를 쫓습니다. **Intelligent Turtle**에게 잡히면 점수가 감소합니다.
 
