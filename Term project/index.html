@@ -11,7 +11,7 @@
 <body>
     <!-- 제목 영역 -->
     <div id="header">
-        <h1>Seoul Tour</h1>
+        <h1>Seoultech Tour</h1>
     </div>
 
     <!-- 지도와 로드뷰를 담는 메인 콘텐츠 영역 -->
@@ -24,7 +24,13 @@
         <!-- Pannellum 로드뷰 영역 -->
         <div id="viewer-container">
             <div id="pannellum-viewer"></div>
-        </div>
+        </div>   
+    </div>
+
+    <div class="sidebar" id="sidebar"></div>
+      
+    <div class="sidebar-toggle" onclick="toggleSidebar()">
+      ▶
     </div>
 
     <!-- 하단 정보 영역 -->
@@ -32,8 +38,13 @@
         <p>Explore the campus with building details and indoor views.</p>
     </div>
 
+
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
-    <script src="script.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="roadview.js"></script>
+    <script src="mapLayers.js"></script>
+    <script src="buildingController.js"></script>
+
 </body>
 </html>
