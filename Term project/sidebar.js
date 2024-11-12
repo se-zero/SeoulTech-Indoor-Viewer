@@ -23,7 +23,7 @@ function toggleSidebar() {
 
 const buildingFloors = {
     highTechBuilding: [1, 2, 3, 4, 5],
-    futureBuilding: [1, 2, 3, 4, 5, 6],
+    Mirae_Hall: ['B1',1, 2, 3, 4, 5],
     // 필요한 다른 건물 추가
 };
 
@@ -57,8 +57,7 @@ function showBuildingFloors(buildingName) {
     sidebar.classList.add("open");
 }
 
-// 건물과 층에 따라 로드뷰를 표시하는 함수 (로드뷰 로직은 roadview.js에 정의)
+// 건물과 층에 따라 로드뷰를 표시하는 함수
 function showFloorView(buildingName, floor) {
-    // 로드뷰와 연동하기 위한 로직을 여기에 추가할 수 있습니다.
-    console.log(`Show road view for ${buildingName}, Floor: ${floor}`);
+    showBuildingFloorView(buildingName, floor);
 }

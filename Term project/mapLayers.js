@@ -39,6 +39,10 @@ var highTechBuilding = L.polygon([
     fillOpacity: 0.2
 }).addTo(map).bindPopup("하이테크관");
 
+highTechBuilding.on('click', function() {
+    handleBuildingClick("highTechBuilding");
+});
+
 
 
 // 100주년 기념관 테두리
@@ -64,7 +68,7 @@ var centennialBuilding = L.polygon([
 }).addTo(map).bindPopup("100주년 기념관");
 
 // 미래관 테두리
-var futureBuilding = L.polygon([
+var Mirae_Hall = L.polygon([
     [37.6297845, 127.0812884],
     [37.6296967, 127.0817586],
     [37.6293290, 127.0816422],
@@ -94,6 +98,6 @@ var futureBuilding = L.polygon([
     fillOpacity: 0.2
 }).addTo(map).bindPopup("미래관");
 
-futureBuilding.on('click', function() {
-    handleBuildingClick("futureBuilding");
+Mirae_Hall.on('click', function() {
+    handleBuildingClick("Mirae_Hall");
 });

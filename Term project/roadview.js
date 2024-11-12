@@ -1,58 +1,175 @@
-// 하이테크관 클릭 이벤트: Pannellum을 이용한 360도 실내 뷰 표시
-function showHighTechBuildingView() {
-    pannellum.viewer('pannellum-viewer', {
-        type: 'equirectangular',
-        panorama: 'path_to_your_360_image.jpg', // 여기에 360도 이미지 경로 입력
+// 동적으로 로드뷰 설정 및 장면 이동 기능 추가
+function showBuildingFloorView(buildingName, floor) {
+    const viewerElement = document.getElementById('pannellum-viewer');
+    
+    // 기존 뷰어 인스턴스를 제거
+    if (viewerElement.viewerInstance) {
+        viewerElement.viewerInstance.destroy();
+    }
+
+    const floorScenes = buildingFloorScenes[buildingName]?.[floor];
+    if (!floorScenes) {
+        console.error(`로드뷰 장면 정보가 없습니다: ${buildingName} - ${floor}층`);
+        return;
+    }
+
+    // 초기화할 장면 설정
+    const firstSceneId = 'scene1';
+
+    // 각 장면에 다중 핫스팟 추가
+    const scenes = floorScenes.scenes.reduce((acc, scene, index) => {
+        acc[`scene${index + 1}`] = {
+            type: 'equirectangular',
+            panorama: scene.image,
+            hotSpots: scene.nextScenes.map(nextScene => ({
+                pitch: nextScene.pitch,
+                yaw: nextScene.yaw,
+                type: 'scene',
+                text: '이동',
+                sceneId: nextScene.sceneId,
+                cssClass: "custom-hotspot"
+            }))
+        };
+        return acc;
+    }, {});
+
+       // Pannellum 뷰어를 새로 초기화
+       viewerElement.viewerInstance = pannellum.viewer(viewerElement, {
+        default: {
+            firstScene: firstSceneId
+        },
+        scenes: scenes,
         autoLoad: true,
-        hfov: 100, // 기본 수평 시야각, 필요에 따라 조정
-        minHfov: 70, // 최소 줌
-        maxHfov: 120 // 최대 줌
+        hfov: 100,
+        minHfov: 70,
+        maxHfov: 120
     });
 }
 
-// 미래관 클릭 이벤트: Pannellum을 이용해 실내 로드뷰 표시
-function showFutureBuildingView() {
-    pannellum.viewer('pannellum-viewer', {
-        default: {
-            firstScene: 'firstScene'    // 초기 장면을 명시적으로 설정
+
+// 로드뷰 이미지 및 장면 간 이동 경로 객체
+const buildingFloorScenes = {
+    highTechBuilding: {
+        1: {
+            firstScene: 'highTechBuilding_floor1_scene1.jpg',
+            scenes: [
+                { image: 'highTechBuilding_floor1_scene1.jpg', nextScene: 'scene2' },
+                { image: 'highTechBuilding_floor1_scene2.jpg', nextScene: 'scene3' },
+                { image: 'highTechBuilding_floor1_scene3.jpg', nextScene: 'scene1' },
+            ]
         },
-        scenes: {
-            'firstScene': {
-                type: 'equirectangular',
-                panorama: '미래관5층-1.jpg', // 첫 번째 파노라마 이미지 경로
-                hfov: 50,
-                minHfov: 70,
-                maxHfov: 120,
-                pitch: 0,
-                yaw: 0,
-                hotSpots: [
-                    {
-                        pitch: -15,            // 화살표 위치 (수직)
-                        yaw: 88,             // 화살표 위치 (수평)
-                        type: 'scene',       // 장면 전환 타입
-                        text: 'Next View',   // 설명 텍스트
-                        sceneId: 'secondScene' // 두 번째 파노라마 ID로 이동
-                    }
-                ]
-            },
-            'secondScene': {
-                type: 'equirectangular',
-                panorama: '미래관5층-2.jpg', // 두 번째 파노라마 이미지 경로
-                hfov: 50,
-                minHfov: 70,
-                maxHfov: 120,
-                pitch: 0,
-                yaw: 0,
-                hotSpots: [
-                    {
-                        pitch: 0,            // 화살표 위치 (수직)
-                        yaw: 28,            // 다른 방향에 화살표 배치
-                        type: 'scene',       // 장면 전환 타입
-                        text: 'Previous View', // 설명 텍스트
-                        sceneId: 'firstScene'  // 첫 번째 파노라마 ID로 돌아감
-                    }
-                ]
-            }
+        2: {
+            firstScene: 'highTechBuilding_floor2_scene1.jpg',
+            scenes: [
+                { image: 'highTechBuilding_floor2_scene1.jpg', nextScene: 'scene2' },
+                { image: 'highTechBuilding_floor2_scene2.jpg', nextScene: 'scene1' },
+            ]
+        },
+        // 추가 층
+    },
+    Mirae_Hall: {
+        B1: { 
+            firstScene: 'Mirae_Hall/MiraeB.jpg', //다시 찍기
+            scenes: [
+                {
+                    image: 'Mirae_Hall/MiraeB.jpg',
+                    nextScenes :[]
+                }
+            ]
+        },
+        1: {
+            firstScene: 'Mirae_Hall/Mirae1-1.jpg', // 벽에 붙어서 다시찍기
+            scenes: [
+                {
+                    image: 'Mirae_Hall/Mirae1-1.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene2', pitch: -15, yaw: 88 },
+                        { sceneId: 'scene3', pitch: -10, yaw: -88 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae1-2.jpg', // 벽에 붙어서 다시찍기
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 0, yaw: 28 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae1-3.jpg', // 벽에 붙어서 다시찍기
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 0, yaw: 28 }
+                    ]
+                }
+            ]
+        },
+        2: {
+            firstScene: 'Mirae_Hall/Mirae2-1.jpg', // 벽에 붙어서 다시찍기
+            scenes: [
+                {
+                    image: 'Mirae_Hall/Mirae2-1.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene2', pitch: -15, yaw: 88 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae2-2.jpg', // 벽에 붙어서 다시찍기
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 0, yaw: 28 }
+                    ]
+                }
+            ]
+        },
+        3: {
+            firstScene: 'Mirae_Hall/Mirae3-1.jpg', 
+            scenes: [
+                {
+                    image: 'Mirae_Hall/Mirae3-1.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene2', pitch: 0, yaw: 84 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae3-2.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 7, yaw: 10 }
+                    ]
+                }
+            ]
+        },
+        4: {
+            firstScene: 'Mirae_Hall/Mirae4-1.jpg', 
+            scenes: [
+                {
+                    image: 'Mirae_Hall/Mirae4-1.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene2', pitch: 0, yaw: 85 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae4-2.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 12, yaw: 28 }
+                    ]
+                }
+            ]
+        },
+        5: {
+            firstScene: 'Mirae_Hall/Mirae5-1.jpg', 
+            scenes: [
+                {
+                    image: 'Mirae_Hall/Mirae5-1.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene2', pitch: -15, yaw: 88 }
+                    ]
+                },
+                {
+                    image: 'Mirae_Hall/Mirae5-2.jpg', 
+                    nextScenes: [
+                        { sceneId: 'scene1', pitch: 0, yaw: 28 }
+                    ]
+                }
+            ]
         }
-    });
-}
+    }
+    // 다른 건물 추가 가능
+};
+

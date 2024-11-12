@@ -31,6 +31,8 @@ body {
     width: 91%;
     margin-top: 20px;
     box-sizing: border-box;
+    position: relative; /* 사이드바와 상호작용을 위해 relative */
+   
 }
 
 /* 지도와 뷰어 배치 */
@@ -73,4 +75,63 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+/* 사이드바 기본 스타일 (닫힌 상태) */
+.sidebar {
+    position: absolute; /* 부모 요소를 기준으로 위치 설정 */
+    top: 190px;
+    right: -250px; /* 숨긴 상태로 시작 */
+    width: 250px;
+    height: calc(100% - 190px); /* 원하는 높이로 설정 */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease; /* 열리고 닫히는 애니메이션 */
+}
+
+/* 사이드바 열림 상태 */
+.sidebar.open {
+    right: 0; /* 화면에 나타남 */
+}
+  
+ /* 토글 버튼 스타일 */
+.sidebar-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.floor-button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+  
+.floor-button:hover {
+    background-color: #555;
+}
+
+/* custom-hotspot 클래스로 핫스팟을 화살표로 스타일링 */
+.custom-hotspot {
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 15px solid #db4d59; /* 화살표 색상 */
+    transform: translate(-50%, -50%) rotate(0deg); /* 위치 조정 및 방향 회전 가능 */
+    position: absolute;
 }
