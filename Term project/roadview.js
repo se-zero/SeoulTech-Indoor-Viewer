@@ -69,10 +69,10 @@ const buildingFloorScenes = {
     },
     Mirae_Hall: {
         B1: { 
-            firstScene: 'Mirae_Hall/MiraeB.jpg', //다시 찍기
+            firstScene: 'Mirae_Hall/MiraeB1.jpg', //다시 찍기
             scenes: [
                 {
-                    image: 'Mirae_Hall/MiraeB.jpg',
+                    image: 'Mirae_Hall/MiraeB1.jpg',
                     nextScenes :[]
                 }
             ]
