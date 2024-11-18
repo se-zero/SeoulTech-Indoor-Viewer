@@ -27,11 +27,12 @@
         </div>   
     </div>
 
-    <div class="sidebar" id="sidebar"></div>
-      
-    <div class="sidebar-toggle" onclick="toggleSidebar()">
-      ▶
+    <div class="sidebar" id="sidebar">
+        <h2>층</h2>
+        <p></p>
     </div>
+      
+    <div class="sidebar-toggle"> ▶</div>
 
     <!-- 하단 정보 영역 -->
     <div id="info-container">
@@ -41,10 +42,12 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
-    <script src="sidebar.js"></script>
-    <script src="roadview.js"></script>
-    <script src="mapLayers.js"></script>
-    <script src="buildingController.js"></script>
+    <script src="buildingDescriptions.js" type="module"></script>
+    <script src="sidebar.js" type="module"></script>
+    <script src="roadview.js" type="module"></script>
+    <script src="mapLayers.js" type="module"></script>
+    <script src="buildingController.js" type="module"></script>
+
 
 </body>
 </html>

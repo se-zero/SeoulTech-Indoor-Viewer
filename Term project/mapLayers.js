@@ -18,6 +18,15 @@ var bounds = L.latLngBounds(
 );
 map.setMaxBounds(bounds);
 
+import { handleBuildingClick } from './buildingController.js'; // handleBuildingClick 가져오기
+import { buildingDescriptions } from './buildingDescriptions.js'; // 건물 소개 데이터 가져오기
+
+export function updateBuildingInfo(buildingName) {
+    const infoContainer = document.getElementById("info-container");
+    const description = buildingDescriptions[buildingName] || "No description available for this building.";
+    infoContainer.querySelector("p").textContent = description;
+}
+
 // 하이테크관 테두리 추가
 var highTechBuilding = L.polygon([
     [37.6323620, 127.0769686],
@@ -100,4 +109,107 @@ var Mirae_Hall = L.polygon([
 
 Mirae_Hall.on('click', function() {
     handleBuildingClick("Mirae_Hall");
+});
+
+// 테크노큐브 테두리
+var TechnoCube = L.polygon([
+    [37.6300431, 127.0797316],
+    [37.6297769, 127.0796636],
+    [37.6296920, 127.0801573],
+    [37.6299593, 127.0802182],
+], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2
+}).addTo(map).bindPopup("테크노큐브");
+
+TechnoCube.on('click', function() {
+    handleBuildingClick("TechnoCube");
+});
+
+// 상상관 테두리
+var Sangsang_Hall = L.polygon([
+    [37.6310283, 127.0809080],
+    [37.6307617, 127.0808288],
+    [37.6309125, 127.0799316],
+    [37.6310498, 127.0799751],
+    [37.6310654, 127.0800501],
+    [37.6310686, 127.0801057]
+], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2
+}).addTo(map).bindPopup("상상관");
+
+Sangsang_Hall.on('click', function() {
+    handleBuildingClick("Sangsang_Hall");
+});
+
+// 상상관 테두리
+var Frontier_Hall = L.polygon([
+    [37.6314836, 127.0765751],
+    [37.6313271, 127.0765272],
+    [37.6314024, 127.0761670],
+    [37.6310842, 127.0760628],
+    [37.6311385, 127.0758419],
+    [37.6316058, 127.0760002]
+], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2
+}).addTo(map).bindPopup("프론티어관");
+
+Frontier_Hall.on('click', function() {
+    handleBuildingClick("Frontier_Hall");
+});
+
+// 다산관 테두리
+var Dasan_Hall = L.polygon([
+    [37.6325900, 127.0786554],
+    [37.6328206, 127.0776820],
+    [37.6323339, 127.0774982],
+    [37.6322294, 127.0779417],
+    [37.6321532, 127.0778460],
+    [37.6321089, 127.0780337],
+    [37.6321996, 127.0780678],
+    [37.6321049, 127.0784721]
+], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2
+}).addTo(map).bindPopup("다산관");
+
+Dasan_Hall.on('click', function() {
+    handleBuildingClick("Dasan_Hall");
+});
+
+// 창학관 테두리
+var Changhak_Hall = L.polygon([
+    [37.6327523, 127.0791205],
+    [37.6325168, 127.0801108],
+    [37.6320295, 127.0799457],
+    [37.6322718, 127.0789447]
+], {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.2
+}).addTo(map).bindPopup("창학관");
+
+Changhak_Hall.on('click', function() {
+    handleBuildingClick("Changhak_Hall");
+});
+
+var Inner_Changhak_Hall = L.polygon([
+    [37.6324538, 127.0798936],
+    [37.6326084, 127.0792552],
+    [37.6323244, 127.0791541],
+    [37.6321681, 127.0797946]
+], {
+    color: 'red',
+    fillColor: 'transparent',
+    fillOpacity: 0
+}).addTo(map).bindPopup("창학관");
+
+Inner_Changhak_Hall.on('click', function() {
+    handleBuildingClick("Changhak_Hall");
 });

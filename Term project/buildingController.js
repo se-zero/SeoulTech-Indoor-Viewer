@@ -1,10 +1,15 @@
+import { showBuildingFloors } from './sidebar.js'; // 사이드바 층수 표시 함수 가져오기
+import { showBuildingFloorView } from './roadview.js'; // 로드뷰 표시 함수 가져오기
+import { updateBuildingInfo } from './mapLayers.js'; // 건물 정보 업데이트 함수 가져오기
+
 // 건물을 클릭했을 때 호출되는 함수
-function handleBuildingClick(buildingName) {
-    // 사이드바에 해당 건물의 층수 표시
+export function handleBuildingClick(buildingName) {
+    // 1. 사이드바 층수 표시
     showBuildingFloors(buildingName);
 
-    // 기본으로 1층 로드뷰 표시
-    showFloorView(buildingName, 1); // 1층을 기본 로드뷰로 설정
+    // 2. 건물 소개글 업데이트
+    updateBuildingInfo(buildingName);
+
+    // 3. 기본적으로 1층 로드뷰 표시
+    showBuildingFloorView(buildingName, 1);
 }
-
-

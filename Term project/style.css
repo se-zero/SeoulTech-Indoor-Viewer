@@ -10,6 +10,7 @@ body {
     color: #333;
     height: 100vh;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 /* 제목 스타일 */
@@ -81,13 +82,12 @@ body {
 /* 사이드바 기본 스타일 (닫힌 상태) */
 .sidebar {
     position: absolute; /* 부모 요소를 기준으로 위치 설정 */
-    top: 190px;
+    top: 230px;
     right: -250px; /* 숨긴 상태로 시작 */
-    width: 250px;
-    height: calc(100% - 190px); /* 원하는 높이로 설정 */
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 5px;
     box-sizing: border-box;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease; /* 열리고 닫히는 애니메이션 */
@@ -101,8 +101,9 @@ body {
  /* 토글 버튼 스타일 */
 .sidebar-toggle {
     position: absolute;
-    top: 50%;
+    top: 208px;
     right: 0;
+    border-radius: 5px;
     transform: translateY(-50%);
     background-color: #333;
     color: #fff;

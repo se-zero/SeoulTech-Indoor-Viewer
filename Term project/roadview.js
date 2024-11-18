@@ -1,5 +1,5 @@
 // 동적으로 로드뷰 설정 및 장면 이동 기능 추가
-function showBuildingFloorView(buildingName, floor) {
+export function showBuildingFloorView(buildingName, floor) {
     const viewerElement = document.getElementById('pannellum-viewer');
     
     // 기존 뷰어 인스턴스를 제거
@@ -69,7 +69,7 @@ const buildingFloorScenes = {
     },
     Mirae_Hall: {
         B1: { 
-            firstScene: 'Mirae_Hall/MiraeB1.jpg', //다시 찍기
+            firstScene: 'Mirae_Hall/MiraeB1.jpg',
             scenes: [
                 {
                     image: 'Mirae_Hall/MiraeB1.jpg',
@@ -102,12 +102,12 @@ const buildingFloorScenes = {
             ]
         },
         2: {
-            firstScene: 'Mirae_Hall/Mirae2-1.jpg', // 벽에 붙어서 다시찍기
+            firstScene: 'Mirae_Hall/Mirae2-1.jpg', 
             scenes: [
                 {
                     image: 'Mirae_Hall/Mirae2-1.jpg', 
                     nextScenes: [
-                        { sceneId: 'scene2', pitch: -15, yaw: 88 }
+                        { sceneId: 'scene2', pitch: -1, yaw: 7 }
                     ]
                 },
                 {

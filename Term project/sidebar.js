@@ -1,25 +1,48 @@
-// 사이드바 높이를 main-content 높이와 맞추기
-function adjustSidebarHeight() {
-    const mainContent = document.getElementById("main-content");
-    const sidebar = document.getElementById("sidebar");
-    if (mainContent && sidebar) {
-        sidebar.style.height = mainContent.offsetHeight + "px";
-    }
-}
-
-// 초기 로드 및 창 크기 변경 시 높이 맞추기
-document.addEventListener("DOMContentLoaded", adjustSidebarHeight);
-window.addEventListener("resize", adjustSidebarHeight);
+import { showBuildingFloorView } from './roadview.js'; // 로드뷰 표시 함수 가져오기
 
 // 사이드바 열고 닫기 기능을 `sidebar-toggle` 버튼에만 적용
 function toggleSidebar() {
     const sidebar = document.getElementById("sidebar");
-    if (sidebar.classList.contains("open")) {
-        sidebar.classList.remove("open"); // 사이드바 숨기기
-    } else {
-        sidebar.classList.add("open"); // 사이드바 표시
+
+    // 열릴 때 크기 다시 설정
+    if (!sidebar.classList.contains("open")) {
+        adjustSidebarDimensions();
     }
+
+    // 사이드바 열기/닫기 상태 전환
+    sidebar.classList.toggle("open");
 }
+
+// 이벤트 리스너로 연결
+document.querySelector('.sidebar-toggle').addEventListener('click', toggleSidebar);
+
+function adjustSidebarDimensions() {
+    const mainContent = document.getElementById("main-content");
+    const sidebar = document.getElementById("sidebar");
+
+    // main-content 높이 계산
+    const partialHeight = (mainContent.offsetHeight * 9) / 10;
+
+
+    // body와 main-content 너비 차이를 계산
+    const bodyWidth = document.body.offsetWidth;
+    const mainContentWidth = mainContent.offsetWidth;
+    const remainingWidth = (bodyWidth - mainContentWidth)/2;
+
+    // 사이드바 크기 설정
+    sidebar.style.height = `${partialHeight}px`;
+    sidebar.style.width = `${remainingWidth}px`;
+}
+
+// 초기화 함수 실행
+window.onload = function () {
+    adjustSidebarDimensions(); // 처음 로드 시 사이드바 크기 설정
+};
+
+// 창 크기 변경 시 동기화
+window.addEventListener("resize", adjustSidebarDimensions);
+
+
 
 const buildingFloors = {
     highTechBuilding: [1, 2, 3, 4, 5],
@@ -28,7 +51,7 @@ const buildingFloors = {
 };
 
 // 사이드바에 층수 표시 (사이드바를 항상 나타나게 설정)
-function showBuildingFloors(buildingName) {
+export function showBuildingFloors(buildingName) {
     const sidebar = document.getElementById("sidebar");
 
     // 존재하지 않는 건물 이름이 들어왔을 경우 처리
@@ -38,17 +61,17 @@ function showBuildingFloors(buildingName) {
     }
 
     // 기존 사이드바 내용을 지워 중복 생성 방지
-    sidebar.innerHTML = "<h2>건물 층수</h2>"; 
+    sidebar.innerHTML = '<h4 style="text-align: center">층</h4>'; 
 
     // 해당 건물의 층수만큼 버튼을 생성
     const floors = buildingFloors[buildingName];
     floors.forEach(floor => {
         const floorButton = document.createElement("div");
         floorButton.className = "floor-button";
-        floorButton.textContent = floor + "층";
+        floorButton.textContent = floor ;
         floorButton.onclick = function() {
             // 각 층 클릭 시 해당 층의 로드뷰를 표시하는 함수 호출
-            showFloorView(buildingName, floor);
+            showBuildingFloorView(buildingName, floor);
         };
         sidebar.appendChild(floorButton);
     });
@@ -57,7 +80,4 @@ function showBuildingFloors(buildingName) {
     sidebar.classList.add("open");
 }
 
-// 건물과 층에 따라 로드뷰를 표시하는 함수
-function showFloorView(buildingName, floor) {
-    showBuildingFloorView(buildingName, floor);
-}
+
