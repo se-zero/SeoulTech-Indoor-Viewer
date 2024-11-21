@@ -49,7 +49,7 @@ var highTechBuilding = L.polygon([
 }).addTo(map).bindPopup("하이테크관");
 
 highTechBuilding.on('click', function() {
-    handleBuildingClick("highTechBuilding");
+    handleBuildingClick("Hi_Tech_Hall");
 });
 
 
@@ -112,7 +112,7 @@ Mirae_Hall.on('click', function() {
 });
 
 // 테크노큐브 테두리
-var TechnoCube = L.polygon([
+var Techno_Cube = L.polygon([
     [37.6300431, 127.0797316],
     [37.6297769, 127.0796636],
     [37.6296920, 127.0801573],
@@ -123,8 +123,8 @@ var TechnoCube = L.polygon([
     fillOpacity: 0.2
 }).addTo(map).bindPopup("테크노큐브");
 
-TechnoCube.on('click', function() {
-    handleBuildingClick("TechnoCube");
+Techno_Cube.on('click', function() {
+    handleBuildingClick("Techno_Cube");
 });
 
 // 상상관 테두리
@@ -145,7 +145,7 @@ Sangsang_Hall.on('click', function() {
     handleBuildingClick("Sangsang_Hall");
 });
 
-// 상상관 테두리
+// 프론티어관 테두리
 var Frontier_Hall = L.polygon([
     [37.6314836, 127.0765751],
     [37.6313271, 127.0765272],

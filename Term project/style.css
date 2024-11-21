@@ -91,6 +91,25 @@ body {
     box-sizing: border-box;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease; /* 열리고 닫히는 애니메이션 */
+    overflow-y: scroll; /* 스크롤 활성화 */
+    overflow-x: hidden; /* 가로 스크롤 제거 */
+    scrollbar-width: none; /* Firefox에서 스크롤바 숨김 */
+    -ms-overflow-style: none; /* IE/Edge에서 스크롤바 숨김 */
+}
+
+h4 {
+    text-align: center;
+    position: sticky; /* 제목을 고정 */
+    top: 0;
+    background-color: #333;
+    margin: 0;
+    padding: 3px;
+    z-index: 1; /* 다른 요소 위에 고정 */
+}
+
+/* Webkit 브라우저에서 스크롤바 숨기기 */
+.sidebar::-webkit-scrollbar {
+    display: none; /* 스크롤바 숨김 */
 }
 
 /* 사이드바 열림 상태 */

@@ -45,8 +45,11 @@ window.addEventListener("resize", adjustSidebarDimensions);
 
 
 const buildingFloors = {
-    highTechBuilding: [1, 2, 3, 4, 5],
+    Dasan_Hall: [1,2,3],
+    Frontier_Hall: [1,2,3,4,5,6,7,8,9,10],
+    Hi_Tech_Hall: [1, 2],
     Mirae_Hall: ['B1',1, 2, 3, 4, 5],
+    Techno_Cube: [1,2,3,4,5,6,7,8,9,10,11,12]
     // 필요한 다른 건물 추가
 };
 
@@ -61,21 +64,26 @@ export function showBuildingFloors(buildingName) {
     }
 
     // 기존 사이드바 내용을 지워 중복 생성 방지
-    sidebar.innerHTML = '<h4 style="text-align: center">층</h4>'; 
+    sidebar.innerHTML = `
+        <h4 style="text-align: center; position: sticky; top: 0; background-color: #333; z-index: 1;">층</h4>
+        <div class="floor-list"></div>
+    `;
+
+    // 층수 버튼을 생성할 영역 선택
+    const floorList = sidebar.querySelector(".floor-list");
 
     // 해당 건물의 층수만큼 버튼을 생성
     const floors = buildingFloors[buildingName];
     floors.forEach(floor => {
         const floorButton = document.createElement("div");
         floorButton.className = "floor-button";
-        floorButton.textContent = floor ;
-        floorButton.onclick = function() {
+        floorButton.textContent = floor;
+        floorButton.onclick = function () {
             // 각 층 클릭 시 해당 층의 로드뷰를 표시하는 함수 호출
             showBuildingFloorView(buildingName, floor);
         };
-        sidebar.appendChild(floorButton);
+        floorList.appendChild(floorButton);
     });
-
     // 사이드바를 표시하고 열기 상태로 설정 (항상 표시)
     sidebar.classList.add("open");
 }
