@@ -51,7 +51,7 @@ export function showBuildingFloorView(buildingName, floor) {
 const buildingFloorScenes = {
     Dasan_Hall: {
         1: {
-            firstScene: 'Dasan_Hall/Dasan_1-1.jpg',  //얘부터가 문제여서 찍고하기
+            firstScene: 'Dasan_Hall/Dasan_1-1.jpg',  
             scenes: [
                 {
                     image: 'Dasan_Hall/Dasan_1-1.jpg',
@@ -131,7 +131,7 @@ const buildingFloorScenes = {
             ]
         },
         3: {
-            firstScene: 'Dasan_Hall/Dasan_3-1.jpg',
+            firstScene: 'Dasan_Hall/Dasan_3-1.jpg', // 3층 2 3 4 5 다시찍기
             scenes: [
                 {
                     image: 'Dasan_Hall/Dasan_3-1.jpg',
@@ -141,28 +141,28 @@ const buildingFloorScenes = {
                     ]
                 },
                 {
-                    image: 'Dasan_Hall/Dasan_2-2-1.jpg',  //다른사진
+                    image: 'Dasan_Hall/Dasan_2-2-1.jpg',  
                     nextScenes: [
                         { sceneId: 'scene2', pitch: -5, yaw: -82 },
                         { sceneId: 'scene4', pitch: -5, yaw: 43 }
                     ]
                 },
                 {
-                    image: 'Dasan_Hall/Dasan_1-2.jpg', //다른사진
+                    image: 'Dasan_Hall/Dasan_1-2.jpg', 
                     nextScenes: [
                         { sceneId: 'scene2', pitch: -15, yaw: 88 },
                         { sceneId: 'scene4', pitch: -10, yaw: -88 }
                     ]
                 },
                 {
-                    image: 'Dasan_Hall/Dasan_1-3.jpg',  //다른사진
+                    image: 'Dasan_Hall/Dasan_1-3.jpg',  
                     nextScenes: [
                         { sceneId: 'scene3', pitch: -15, yaw: 88 },
                         { sceneId: 'scene5', pitch: -10, yaw: -88 }
                     ]
                 },
                 {
-                    image: 'Dasan_Hall/Dasan_1-4.jpg',  //다른사진
+                    image: 'Dasan_Hall/Dasan_1-4.jpg',  
                     nextScenes: [
                         { sceneId: 'scene4', pitch: -15, yaw: 88 },
                         { sceneId: 'scene1', pitch: -10, yaw: -88 }
