@@ -46,8 +46,16 @@ window.addEventListener("resize", adjustSidebarDimensions);
 
 const buildingFloors = {
     Dasan_Hall: [1,2,3],
+    Changhak_Hall: [1,2,3],
     Frontier_Hall: [1,2,3,4,5,6,7,8,9,10],
     Hi_Tech_Hall: [1, 2],
+    International_Hall: [1,2,3,4,5],
+    Davinch_Hall: ['B1',1,2,3,4,5,6,7],
+    Eoui_Hall: [1,2,3,4,5,6],
+    The_100th_Memorial_Hall:[1],
+    Student_Union_Bldg2: [1,2,3],
+    Sangsang_Hall: [1,2,3],
+    Mugung_Hall: [1,2,3,4,5,6,7,8,9],
     Mirae_Hall: ['B1',1, 2, 3, 4, 5],
     Techno_Cube: [1,2,3,4,5,6,7,8,9,10,11,12]
     // 필요한 다른 건물 추가
