@@ -9,5 +9,5 @@ I am Jung Se-yeong, majoring in computer engineering at Seoultech.
 * OOP
 * digital logic and systems
 * data structure
-##project
+## project
 https://se-zero.github.io/seyeong/Term%20project/index.html
