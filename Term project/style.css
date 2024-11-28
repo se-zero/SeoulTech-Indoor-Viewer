@@ -56,7 +56,9 @@ body {
 
 #default-image {
     width: 100%;
-    height: 100%;
+    height: 90%;
+    position: relative;
+    top: 5%;
     object-fit: cover; /* 이미지 비율을 유지하며 화면에 맞춤 */
 }
 
