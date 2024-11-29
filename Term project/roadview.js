@@ -67,6 +67,47 @@ export function showBuildingFloorView(buildingName, floor) {
 
 // 로드뷰 이미지 및 장면 간 이동 경로 객체
 export const buildingFloorScenes = {
+    Administration_Bldg: {
+        type: 'pannellum',
+        floors: {
+            1: { 
+                firstScene: 'Administration_Bldg/Administration_1.jpg',
+                scenes: [
+                    {
+                        image: 'Administration_Bldg/Administration_1.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            2: { 
+                firstScene: 'Administration_Bldg/Administration_2.jpg',
+                scenes: [
+                    {
+                        image: 'Administration_Bldg/Administration_2.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            3: { 
+                firstScene: 'Administration_Bldg/Administration_3.jpg',
+                scenes: [
+                    {
+                        image: 'Administration_Bldg/Administration_3.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            4: { 
+                firstScene: 'Administration_Bldg/Administration_4.jpg', 
+                scenes: [
+                    {
+                        image: 'Administration_Bldg/Administration_4.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+        }
+    },
     Dasan_Hall: {
         type: 'pannellum',
         floors: {
@@ -321,6 +362,81 @@ export const buildingFloorScenes = {
             }  
         }
     },
+    Hyesung_Hall:
+    {
+        type: 'pannellum',
+        floors: {
+            1: { 
+                firstScene: 'Hyesung_Hall/Hyesung_1-1.jpg',
+                scenes: [
+                    {
+                        image: 'Hyesung_Hall/Hyesung_1-1.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene2', pitch: -2, yaw: -60 }
+                        ]
+                    },
+                    {
+                        image: 'Hyesung_Hall/Hyesung_1-2.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene1', pitch: -5, yaw: 65 }
+                        ]
+                    }
+                ]
+            },
+            2: { 
+                firstScene: 'Hyesung_Hall/Hyesung_2.jpg',
+                scenes: [
+                    {
+                        image: 'Hyesung_Hall/Hyesung_2.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            3: { 
+                firstScene: 'Hyesung_Hall/Hyesung_3.jpg',
+                scenes: [
+                    {
+                        image: 'Hyesung_Hall/Hyesung_3-1.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene2', pitch: -15, yaw: 90 }
+                        ]
+                    },
+                    {
+                        image: 'Hyesung_Hall/Hyesung_3-2.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene1', pitch: -8, yaw: -25 }
+                        ]
+                    }
+                ]
+            },
+            4: { 
+                firstScene: 'Hyesung_Hall/Hyesung_4-1.jpg', 
+                scenes: [
+                    {
+                        image: 'Hyesung_Hall/Hyesung_4-1.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene2', pitch: -15, yaw: 85 }
+                        ]
+                    },
+                    {
+                        image: 'Hyesung_Hall/Hyesung_4-2.jpg',
+                        nextScenes :[
+                            { sceneId: 'scene1', pitch: -5, yaw: -35 }
+                        ]
+                    }
+                ]
+            },
+            5: { 
+                firstScene: 'Hyesung_Hall/Hyesung_5.jpg', 
+                scenes: [
+                    {
+                        image: 'Hyesung_Hall/Hyesung_5.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            }
+        }
+    },
     Chungun_Hall:{
         type: 'pannellum',
         floors: {
@@ -458,6 +574,56 @@ export const buildingFloorScenes = {
             }  
         }
     },//1층까지함 2,3층 화살표 설정
+    Chanjo_Hall: {
+        type: 'pannellum',
+        floors: {
+            1: { 
+                firstScene: 'Chanjo_Hall/Chanjo_1.jpg',
+                scenes: [
+                    {
+                        image: 'Chanjo_Hall/Chanjo_1.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            2: { 
+                firstScene: 'Chanjo_Hall/Chanjo_2.jpg',
+                scenes: [
+                    {
+                        image: 'Chanjo_Hall/Chanjo_2.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            3: { 
+                firstScene: 'Chanjo_Hall/Chanjo_3.jpg',
+                scenes: [
+                    {
+                        image: 'Chanjo_Hall/Chanjo_3.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            4: { 
+                firstScene: 'Chanjo_Hall/Chanjo_4.jpg', // 4층 찍기
+                scenes: [
+                    {
+                        image: 'Chanjo_Hall/Chanjo_4.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            5: { 
+                firstScene: 'Chanjo_Hall/Chanjo_5.jpg',
+                scenes: [
+                    {
+                        image: 'Chanjo_Hall/Chanjo_5.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            }
+        }
+    },
     Frontier_Hall: {
         type: 'pannellum',
         floors: {
@@ -888,16 +1054,93 @@ export const buildingFloorScenes = {
             }
         }
     },
+    Sangsang_Hall: {
+        type: 'pannellum',
+        floors: {
+            1: { 
+                firstScene: 'Sangsang_Hall/Sangsang_1.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_1.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            2: { 
+                firstScene: 'Sangsang_Hall/Sangsang_2.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_2.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            3: { 
+                firstScene: 'Sangsang_Hall/Sangsang_3.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_3.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            4: { 
+                firstScene: 'Sangsang_Hall/Sangsang_4.jpg', // 4층 찍기
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_4.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            5: { 
+                firstScene: 'Sangsang_Hall/Sangsang_5.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_5.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            6: { 
+                firstScene: 'Sangsang_Hall/Sangsang_6.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_6.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            7: { 
+                firstScene: 'Sangsang_Hall/Sangsang_7.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_7.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            8: { 
+                firstScene: 'Sangsang_Hall/Sangsang_8.jpg',
+                scenes: [
+                    {
+                        image: 'Sangsang_Hall/Sangsang_8.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            }
+        }
+    },//4층 찍기
     Areum_Hall: {
         type: 'static',
         image: 'campus.jpg',
         floors: { 1: {} }
     },
-    Mugung_Hall:{
+    Mugung_Hall: {
         type: 'pannellum',
         floors: {
             1: { 
-                firstScene: 'Mugung_Hall/Mugung_1.jpg', //1층 사진으로 바꾸기
+                firstScene: 'Mugung_Hall/Mugung_1.jpg',
                 scenes: [
                     {
                         image: 'Mugung_Hall/Mugung_1.jpg',
@@ -960,7 +1203,7 @@ export const buildingFloorScenes = {
                 ]
             },
             8: { 
-                firstScene: 'Mugung_Hall/Mugung_8.jpg',  //8층 찍기
+                firstScene: 'Mugung_Hall/Mugung_8.jpg', 
                 scenes: [
                     {
                         image: 'Mugung_Hall/Mugung_8.jpg',
@@ -979,6 +1222,47 @@ export const buildingFloorScenes = {
             }
         }
     },
+    Mugung_Hall_A: {
+        type: 'pannellum',
+        floors: {
+            1: { 
+                firstScene: 'Mugung_Hall_A/Mugung_A_1.jpg', 
+                scenes: [
+                    {
+                        image: 'Mugung_Hall_A/Mugung_A_1.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            2: { 
+                firstScene: 'Mugung_Hall_A/Mugung_A_2.jpg', //찍기
+                scenes: [
+                    {
+                        image: 'Mugung_Hall_A/Mugung_A_2.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            3: { 
+                firstScene: 'Mugung_Hall_A/Mugung_A_3.jpg',
+                scenes: [
+                    {
+                        image: 'Mugung_Hall_A/Mugung_A_3.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            },
+            4: { 
+                firstScene: 'Mugung_Hall_A/Mugung_A_4.jpg',
+                scenes: [
+                    {
+                        image: 'Mugung_Hall_A/Mugung_A_4.jpg',
+                        nextScenes :[]
+                    }
+                ]
+            }
+        }
+    }, // 2층 찍기
     Mirae_Hall: {
         type: 'pannellum',
         floors: {
