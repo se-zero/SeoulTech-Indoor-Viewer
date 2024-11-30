@@ -491,89 +491,104 @@ export const buildingFloorScenes = {
                 ]
             },
             2: {
-                firstScene: 'Changhak_Hall/Changhak_2-1.jpg',  
+                firstScene: 'Chungun_Hall/Chungun_2-1.jpg',  
                 scenes: [
                     {
-                        image: 'Changhak_Hall/Changhak_2-1.jpg',
+                        image: 'Chungun_Hall/Chungun_2-1.jpg',
                         nextScenes: [
-                            { sceneId: 'scene2', pitch: 2, yaw: 107 },
-                            { sceneId: 'scene5', pitch: 3, yaw: -120 }
-                        ]
-                    },
-                    {
-                        image: 'Changhak_Hall/Changhak_2-2.jpg',
-                        nextScenes: [
-                            { sceneId: 'scene3', pitch: 4, yaw: 20 },
-                            { sceneId: 'scene1', pitch: 9, yaw: -89 }
-                        ]
-                    },
-                    {
-                        image: 'Changhak_Hall/Changhak_2-3.jpg',
-                        nextScenes: [
-                            { sceneId: 'scene4', pitch: -5, yaw: 35 },
-                            { sceneId: 'scene2', pitch: 2, yaw: -70 }
-                        ]
-                    },
-                    {
-                        image: 'Changhak_Hall/Changhak_2-4.jpg',
-                        nextScenes: [
-                            { sceneId: 'scene5', pitch: 2, yaw: 9 },
-                            { sceneId: 'scene3', pitch: 12, yaw: -103 }
+                            { sceneId: 'scene2', pitch: -24, yaw: 104 },
+                            { sceneId: 'scene6', pitch: 8, yaw: -117 },
 
                         ]
                     },
                     {
-                        image: 'Changhak_Hall/Changhak_2-5.jpg',
+                        image: 'Chungun_Hall/Chungun_2-2.jpg',
                         nextScenes: [
-                            { sceneId: 'scene1', pitch: 5, yaw: 10 },
-                            { sceneId: 'scene4', pitch: 8, yaw: -100 }, 
+                            { sceneId: 'scene3', pitch: -5, yaw: -20 },
+                            { sceneId: 'scene1', pitch: 4, yaw: -134 }
+                        ]
+                    },
+                    {
+                        image: 'Chungun_Hall/Chungun_2-3.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene4', pitch: 2, yaw: 2 },
+                            { sceneId: 'scene2', pitch: 2, yaw: -99 }
+                        ]
+                    },
+                    {
+                        image: 'Chungun_Hall/Chungun_2-4.jpg',
+                        nextScenes: [ 
+                            { sceneId: 'scene5', pitch: -17, yaw: 97 },
+                            { sceneId: 'scene3', pitch: 1, yaw: -113 },
+
+                        ]
+                    },
+                    {
+                        image: 'Chungun_Hall/Chungun_2-5.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene6', pitch: -5, yaw: -13 },
+                            { sceneId: 'scene4', pitch: 0, yaw: -125 }, 
+                        ]
+                    },
+                    {
+                        image: 'Chungun_Hall/Chungun_2-6.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene1', pitch: -10, yaw: 112 },
+                            { sceneId: 'scene5', pitch: -3, yaw: -1 }, 
                         ]
                     }
                 ]
             },
             3: {
-                firstScene: 'Changhak_Hall/Changhak_3-1.jpg',  
+                firstScene: 'Chungun_Hall/Chungun_3-1.jpg',  
                 scenes: [
                     {
-                        image: 'Changhak_Hall/Changhak_3-1.jpg',
+                        image: 'Chungun_Hall/Chungun_3-1.jpg',
                         nextScenes: [
-                            { sceneId: 'scene2', pitch: 2, yaw: 110 },
-                            { sceneId: 'scene5', pitch: 10, yaw: -113 }
+                            { sceneId: 'scene2', pitch: 0, yaw: 100 },
+                            { sceneId: 'scene6', pitch: 5, yaw: -119 }
                         ]
                     },
                     {
-                        image: 'Changhak_Hall/Changhak_3-2.jpg',
+                        image: 'Chungun_Hall/Chungun_3-2.jpg',
                         nextScenes: [
-                            { sceneId: 'scene3', pitch: 2, yaw: 27 },
-                            { sceneId: 'scene1', pitch: 3, yaw: -85 }
+                            { sceneId: 'scene3', pitch: -2, yaw: -35 },
+                            { sceneId: 'scene1', pitch: 4, yaw: -142 }
                         ]
                     },
                     {
-                        image: 'Changhak_Hall/Changhak_3-3.jpg',
+                        image: 'Chungun_Hall/Chungun_3-3.jpg',
                         nextScenes: [
-                            { sceneId: 'scene4', pitch: 5, yaw: 62 },
-                            { sceneId: 'scene2', pitch: 5, yaw: -45 }
+                            { sceneId: 'scene4', pitch: 2, yaw: -6 },
+                            { sceneId: 'scene2', pitch: 3, yaw: -108 }
                         ]
                     },
                     {
-                        image: 'Changhak_Hall/Changhak_3-4.jpg',
-                        nextScenes: [
-                            { sceneId: 'scene5', pitch: -2, yaw: 37 },
-                            { sceneId: 'scene3', pitch: 3, yaw: -73 }
+                        image: 'Chungun_Hall/Chungun_3-4.jpg',
+                        nextScenes: [ 
+                            { sceneId: 'scene5', pitch: -38, yaw: 130 },
+                            { sceneId: 'scene3', pitch: 2, yaw: -80 },
 
                         ]
                     },
                     {
-                        image: 'Changhak_Hall/Changhak_3-5.jpg',
+                        image: 'Chungun_Hall/Chungun_3-5.jpg',
                         nextScenes: [
-                            { sceneId: 'scene1', pitch: -5, yaw: -22 },
-                            { sceneId: 'scene4', pitch: 5, yaw: -132 }, 
+                            { sceneId: 'scene6', pitch: -1, yaw: 115 },
+                            { sceneId: 'scene4', pitch: 2, yaw: 3 }, 
+                        ]
+                    },
+                    {
+                        image: 'Chungun_Hall/Chungun_3-6.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene1', pitch: -1, yaw: 90 },
+                            { sceneId: 'scene5', pitch: 5, yaw: -15 }, 
                         ]
                     }
                 ]
-            }  
+            },  
         }
-    },//1층까지함 2,3층 화살표 설정
+    },
     Chanjo_Hall: {
         type: 'pannellum',
         floors: {
