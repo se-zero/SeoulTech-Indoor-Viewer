@@ -6,7 +6,7 @@
 인터랙티브한 사이드바와 로드뷰를 통해 몰입감 있는 경험을 제공합니다.
 
 ## 🌐 Live Demo
-[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/Term%20project/index.html)  
+[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/Term%20project/)  
 위 링크를 통해 프로젝트를 직접 체험해보세요!
 
 ## 🎥 Demo Video
