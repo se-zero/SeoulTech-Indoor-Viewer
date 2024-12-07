@@ -28,7 +28,7 @@ import { handleBuildingClick } from './buildingController.js'; // handleBuilding
 
 
 
-// 하이테크관 테두리 
+
 const buildings = [
     // 학교 테두리
     {
@@ -208,7 +208,19 @@ const buildings = [
             [37.6343488, 127.0810357],
             [37.6344779, 127.0805180]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
+        alwaysVisible: false // hover 효과 적용
+    },
+    {
+        name: "Technopark",
+        tooltipName: "테크노파크",
+        coordinates: [
+            [37.6351589, 127.0802750],
+            [37.6350896, 127.0806015],
+            [37.6344418, 127.0803825],
+            [37.6345110, 127.0800559]
+        ],
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 창조관 테두리(8)
@@ -275,7 +287,7 @@ const buildings = [
             [37.6327627, 127.0771022],
             [37.6329443, 127.0763196]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     //도서관 별관(35)
@@ -292,7 +304,7 @@ const buildings = [
             [37.6338639, 127.0764982],
             [37.6338698, 127.0764802]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 제1학생회관 테두리(37)
@@ -307,7 +319,7 @@ const buildings = [
             [37.6340631, 127.0768832],
             [37.6341332, 127.0766047]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 국제관 테두리(38)
@@ -459,6 +471,20 @@ const buildings = [
         color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
+    // 수림학사 테두리(45)
+    {
+        name: "soolim_Dormitory",
+        tooltipName: "수림학사",
+        coordinates: [
+            [37.6360292, 127.0777888],
+            [37.6357830, 127.0779180],
+            [37.6360636, 127.0787128],
+            [37.6363028, 127.0785632]
+
+        ],
+        color: 'pink', // 기본 테두리 색상
+        alwaysVisible: false // hover 효과 적용
+    },
     // 누리학사 테두리(46)
     {
         name: "Noori_Dormitory",
@@ -504,7 +530,7 @@ const buildings = [
             [37.6305915, 127.0783427],
             [37.6306635, 127.0779156]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'red', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 제2학생회관(52)
@@ -572,7 +598,7 @@ const buildings = [
             [37.6297885, 127.0803058],
             [37.6297860, 127.0803287]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 체육관 테두리(55)
@@ -589,7 +615,7 @@ const buildings = [
             [37.6291029, 127.0791570],
             [37.6292936, 127.0792087]
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 대륙관 테두리(56)
@@ -617,7 +643,7 @@ const buildings = [
             [37.6293058, 127.0798671]
 
         ],
-        color: 'blue', // 기본 테두리 색상
+        color: 'pink', // 기본 테두리 색상
         alwaysVisible: false // hover 효과 적용
     },
     // 무궁관 테두리(57)

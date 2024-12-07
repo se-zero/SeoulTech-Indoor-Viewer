@@ -45,7 +45,8 @@ window.addEventListener("resize", adjustSidebarDimensions);
 
 
 const buildingFloors = {
-    Administration_Bldg:[1,2,3,4],
+    default: [],
+    Administration_Bldg: [1,2,3,4],
     Dasan_Hall: [1,2,3],
     Changhak_Hall: [1,2,3],
     Hyesung_Hall: [1,2,3,4,5],
@@ -56,7 +57,7 @@ const buildingFloors = {
     International_Hall: [1,2,3,4,5],
     Davinch_Hall: ['B1',1,2,3,4,5,6,7],
     Eoui_Hall: [1,2,3,4,5,6],
-    The_100th_Memorial_Hall:[1],
+    The_100th_Memorial_Hall:[1,2,3],
     Student_Union_Bldg2: [1,2,3],
     Sangsang_Hall: [1,2,3,4,5,6,7,8],
     Areum_Hall:[1],
@@ -100,6 +101,7 @@ export function showBuildingFloors(buildingName) {
     });
     // 사이드바를 표시하고 열기 상태로 설정 (항상 표시)
     sidebar.classList.add("open");
+    
 }
 
 

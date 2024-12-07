@@ -589,6 +589,11 @@ export const buildingFloorScenes = {
             },  
         }
     },
+    Technopark:{
+        type: 'static',
+        image: 'image/Technopark.png',
+        floors: { 1: {} }
+    },
     Chanjo_Hall: {
         type: 'pannellum',
         floors: {
@@ -803,6 +808,21 @@ export const buildingFloorScenes = {
             }
         }
     },
+    Centeral_Library: {
+        type: 'static',
+        image: 'image/Centeral_Library.png',
+        floors: { 1: {} }
+    },
+    Centeral_Library_Annex: {
+        type: 'static',
+        image: 'image/Centeral_Library_Annex.png',
+        floors: { 1: {} }
+    },
+    Student_Union_Bldg1: {
+        type: 'static',
+        image: 'image/Student_Union_Bldg1.jpg',
+        floors: { 1: {} }
+    },
     International_Hall: {
         type: 'pannellum',
         floors: {
@@ -982,10 +1002,10 @@ export const buildingFloorScenes = {
         type: 'pannellum',
         floors: {
             1: { 
-                firstScene: 'Eoui_Hall/Eoui_2.jpg', //1층 사진으로 바꾸기
+                firstScene: 'Eoui_Hall/Eoui_1.jpg', 
                 scenes: [
                     {
-                        image: 'Eoui_Hall/Eoui_2.jpg',
+                        image: 'Eoui_Hall/Eoui_1.jpg',
                         nextScenes :[]
                     }
                 ]
@@ -1032,6 +1052,86 @@ export const buildingFloorScenes = {
                     {
                         image: 'Eoui_Hall/Eoui_6.jpg',
                         nextScenes :[]
+                    }
+                ]
+            }
+        }
+    }, 
+    Buram_Dormitory: {
+        type: 'static',
+        image: 'image/Buram.jpg',
+        floors: { 1: {} }
+    },
+    KB_Dormitory: {
+        type: 'static',
+        image: 'image/KB.jpg',
+        floors: { 1: {} }
+    },
+    Sunglim_Dormitory: {
+        type: 'static',
+        image: 'image/Sunglim.jpg',
+        floors: { 1: {} }
+    },
+    soolim_Dormitory: {
+        type: 'static',
+        image: 'image/soolim.jpg',
+        floors: { 1: {} }
+    },
+    Noori_Dormitory: {
+        type: 'static',
+        image: 'image/Noori.jpg',
+        floors: { 1: {} }
+    },
+    The_100th_Memorial_Hall: {
+        type: 'pannellum',
+        floors: {
+            1: {
+                firstScene: 'The_100th_Memorial_Hall/The_100th_1.jpg',
+                scenes: [
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_1.jpg',
+                        nextScenes: []
+                    }
+                ]
+            },
+            2: {
+                firstScene: 'The_100th_Memorial_Hall/The_100th_2-1.jpg',  
+                scenes: [
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_2-1.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene2', pitch: 0, yaw: -90 },
+                            { sceneId: 'scene3', pitch: -8, yaw: 95 }
+                        ]
+                    },
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_2-2.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene1', pitch: -30, yaw: 40 }
+                        ]
+                    },
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_2-3.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene1', pitch: -15, yaw: 5 },
+                        ]
+                    }
+                ]
+            },
+            3: {
+                firstScene: 'The_100th_Memorial_Hall/The_100th_3-1.jpg',  
+                scenes: [
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_3-1.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene2', pitch: -5, yaw: -5 },
+                        ]
+                    },
+                    {
+                        image: 'The_100th_Memorial_Hall/The_100th_3-2.jpg',
+                        nextScenes: [
+                            { sceneId: 'scene1', pitch: -30, yaw: 120 }
+                        ]
                     }
                 ]
             }
@@ -1100,7 +1200,7 @@ export const buildingFloorScenes = {
                 ]
             },
             4: { 
-                firstScene: 'Sangsang_Hall/Sangsang_4.jpg', // 4층 찍기
+                firstScene: 'Sangsang_Hall/Sangsang_4.jpg',
                 scenes: [
                     {
                         image: 'Sangsang_Hall/Sangsang_4.jpg',
@@ -1145,10 +1245,20 @@ export const buildingFloorScenes = {
                 ]
             }
         }
-    },//4층 찍기
+    },
     Areum_Hall: {
         type: 'static',
-        image: 'campus.jpg',
+        image: 'image/Areum.jpg',
+        floors: { 1: {} }
+    },
+    University_Gymnasium: {
+        type: 'static',
+        image: 'image/University_Gymnasium.png',
+        floors: { 1: {} }
+    },
+    Daeryuk_Hall: {
+        type: 'static',
+        image: 'image/Daeryuk.jpeg',
         floors: { 1: {} }
     },
     Mugung_Hall: {
@@ -1250,7 +1360,7 @@ export const buildingFloorScenes = {
                 ]
             },
             2: { 
-                firstScene: 'Mugung_Hall_A/Mugung_A_2.jpg', //찍기
+                firstScene: 'Mugung_Hall_A/Mugung_A_2.jpg',
                 scenes: [
                     {
                         image: 'Mugung_Hall_A/Mugung_A_2.jpg',
@@ -1277,7 +1387,7 @@ export const buildingFloorScenes = {
                 ]
             }
         }
-    }, // 2층 찍기
+    }, 
     Mirae_Hall: {
         type: 'pannellum',
         floors: {

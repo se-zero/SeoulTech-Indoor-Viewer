@@ -15,6 +15,9 @@ export function handleBuildingClick(buildingName) {
 
     if (buildingData.type === 'static') {
         showStaticBuildingImage(buildingData.image);
+        showBuildingFloors('default');
+        const sidebar = document.getElementById("sidebar");
+        sidebar.classList.remove("open");
     } else if (buildingData.type === 'pannellum') {
         showBuildingFloors(buildingName);
         showBuildingFloorView(buildingName, 1); // 기본적으로 1층 로드뷰 표시
