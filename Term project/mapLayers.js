@@ -26,9 +26,6 @@ const map = initializeMap();
 
 import { handleBuildingClick } from './buildingController.js'; // handleBuildingClick 가져오기
 
-
-
-
 const buildings = [
     // 학교 테두리
     {

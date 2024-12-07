@@ -1,55 +1,53 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus Map with Indoor View</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css" />
-</head>
-<body>
-    <!-- 제목 영역 -->
-    <div id="header">
-        <h1>Discover SeoulTech Campus</h1>
-    </div>
-
-    <!-- 지도와 로드뷰를 담는 메인 콘텐츠 영역 -->
-    <div id="main-content">
-        <!-- 지도 영역 -->
-        <div id="map-container">
-            <div id="map"></div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Campus Map with Indoor View</title>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.css" />
+    </head>
+    <body>
+        <!-- 제목 영역 -->
+        <div id="header">
+            <h1>Discover SeoulTech Campus</h1>
         </div>
 
-        <!-- Pannellum 로드뷰 영역 -->
-        <div id="viewer-container">
-            <div id="pannellum-viewer">
-                <img id="default-image" src="campus.jpg" alt="캠퍼스 지도" />
+        <!-- 지도와 로드뷰를 담는 메인 콘텐츠 영역 -->
+        <div id="main-content">
+            <!-- 지도 영역 -->
+            <div id="map-container">
+                <div id="map"></div>
             </div>
-        </div>   
-    </div>
 
-    <div class="sidebar" id="sidebar">
-        <h2>층</h2>
-        <p></p>
-    </div>
-      
-    <div class="sidebar-toggle"> ▶</div>
+            <!-- Pannellum 로드뷰 영역 -->
+            <div id="viewer-container">
+                <div id="pannellum-viewer">
+                    <img id="default-image" src="campus.jpg" alt="캠퍼스 지도" />
+                </div>
+            </div>   
+        </div>
 
-    <!-- 하단 정보 영역 -->
-    <div id="info-container">
-        <p><b>Welcome to the SeoulTech Campus Roadview!</b><br>Click on a building on the map to explore its interior through an immersive roadview experience.<br>For locations like the library with heavy foot traffic, buildings under construction, or dormitories, where interior photography is not possible, exterior photos are provided instead.</p>
-    </div>
+        <div class="sidebar" id="sidebar">
+            <h2>층</h2>
+            <p></p>
+        </div>
+        
+        <div class="sidebar-toggle"> ▶</div>
 
+        <!-- 하단 정보 영역 -->
+        <div id="info-container">
+            <p><b>Welcome to the SeoulTech Campus Roadview!</b><br>Click on a building on the map to explore its interior through an immersive roadview experience.<br>For locations like the library with heavy foot traffic, buildings under construction, or dormitories, where interior photography is not possible, exterior photos are provided instead.</p>
+        </div>
 
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
-    <script src="buildingDescriptions.js" type="module"></script>
-    <script src="sidebar.js" type="module"></script>
-    <script src="roadview.js" type="module"></script>
-    <script src="mapLayers.js" type="module"></script>
-    <script src="buildingController.js" type="module"></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/pannellum/build/pannellum.js"></script>
+        <script src="buildingDescriptions.js" type="module"></script>
+        <script src="sidebar.js" type="module"></script>
+        <script src="roadview.js" type="module"></script>
+        <script src="mapLayers.js" type="module"></script>
+        <script src="buildingController.js" type="module"></script>
 
-
-</body>
+    </body>
 </html>

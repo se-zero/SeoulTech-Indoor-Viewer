@@ -29,15 +29,7 @@ export const buildingDescriptions = {
     Mugung_Hall_A: "A building with engineering laboratories and research spaces to support student practice and research.",
     Mirae_Hall: "A hub for IT and advanced technology studies, featuring state-of-the-art labs and research facilities.",
     Techno_Cube: "A space for industry-academic collaboration and entrepreneurship, with startup offices and research centers."
-
-
-
-
-
-    
-   
 };
-
 
 export function updateBuildingInfo(buildingName) {
     const infoContainer = document.getElementById("info-container");
