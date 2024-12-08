@@ -1,50 +1,51 @@
 # SeoulTech Campus Map and Indoor Viewer
 
 ## 🚀 Introduction
-**SeoulTech Campus Map and Indoor Viewer**는 서울과학기술대학교 캠퍼스와 건물 내부를 탐색할 수 있는 웹 애플리케이션입니다.  
-학생들과 방문객들에게 보다 나은 탐색 경험을 제공하며, 다음과 같은 목적을 가지고 개발되었습니다:
+**SeoulTech Campus Map and Indoor Viewer**is a web application that allows users to explore the campus and building interiors of Seoul National University of Science and Technology (SeoulTech).
+It is designed to enhance the exploration experience for students and visitors, with the following objectives:
 
 ## 🎯 Project Purpose
-이 프로젝트는 다음 두 가지 문제를 해결하기 위해 설계되었습니다:
+This project aims to address the following two challenges:
 
-1. **서울과학기술대학교 학생들의 건물 탐색 문제**  
-   - 대부분의 학생들은 자신의 학과가 사용하는 건물만 이용하므로 다른 건물을 가볼 기회가 적습니다.  
-   - 대학교 내에는 공부할 공간이 많지만, 이를 잘 모르는 경우가 많습니다.  
-   - 이 시스템을 통해 학생들이 건물 내부를 탐색하고 새로운 학습 공간을 발견할 수 있습니다.
+1. **Building Navigation Challenges for SeoulTech Students**  
+   - Most students only use the buildings related to their department, which limits opportunities to explore other buildings.  
+   - There are many study spaces available within buildings, but students are often unaware of them.
+   - This system helps students explore building interiors and discover new study spaces.
 
-2. **수험생들의 대학교 건물 위치 탐색**  
-   - 면접이나 논술고사를 위해 대학교를 방문하는 수험생들은 대학교 건물에 처음 들어오는 경우가 많습니다.  
-   - 수험생들이 면접 또는 논술고사를 보는 건물 내부 위치를 미리 확인함으로써, 당일 혼란을 줄이고 효율적으로 준비할 수 있도록 돕는 것이 목표입니다.
+
+2. **Building Navigation Challenges for Prospective Students**  
+   - Prospective students visiting the university for interviews or essay exams often enter university buildings for the first time.
+   - By allowing them to check the interior locations of the buildings where their interviews or exams are scheduled, this system aims to reduce confusion and help them prepare efficiently.
 
 
 ## 🌐 Live Demo
 [SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/Term%20project/)  
-위 링크를 통해 프로젝트를 직접 체험해보세요!
+Click the link above to directly experience the project!
 
 ## 🎥 Demo Video
 [![Watch the demo](https://img.youtube.com/vi/영상ID/0.jpg)](https://www.youtube.com/watch?v=영상ID)  
-_(위 이미지를 클릭하면 프로젝트 데모 영상으로 이동합니다.)_
+_(Click the image to watch the demo video.)_
 
 ## 💡 Features
-- **캠퍼스 지도 탐색**: 주요 건물과 경계를 시각적으로 확인할 수 있습니다.
-- **실내 로드뷰 제공**: `Pannellum.js`를 사용하여 각 층의 실내를 가상으로 탐험 가능.
-- **사이드바 인터랙션**: 선택한 건물의 층별 정보와 뷰어를 제공.
-- **건물별 상세 정보**: 건물 사용 목적, 주요 부서 등 세부 정보 표시.
+- **Campus Map Navigation**: Visually check major buildings and their boundaries.
+- **Indoor Roadview**: Explore each floor virtually using `Pannellum.js`.
+- **Sidebar Interaction**: Access detailed floor information and indoor views for selected buildings.
+- **Detailed Building Information**: Provides purposes, departments, and additional details about each building.
 
 ## 🛠️ Technology Stack
 - **Frontend**:
   - HTML5, CSS3, JavaScript (ES6+)
-  - `Leaflet.js`: 지도 시각화
-  - `Pannellum.js`: 로드뷰 뷰어
+  - `Leaflet.js`: Map visualization
+  - `Pannellum.js`: Roadview viewer
 - **Backend**:
-  - 없음 (정적 웹 애플리케이션)
+  - None (Static web application)
 - **Deployment**:
   - GitHub Pages
 
 ## 📂 Project Structure
 ```plaintext
 seyeong/
-├── README.md                 # 루트 디렉토리의 README 파일
+├── README.md                 # Root directory README file
 └── Termproject/
     ├── index.html
     ├── style.css
@@ -62,25 +63,25 @@ seyeong/
 
 ## 🔧 Setup & Usage
 ### 1. Clone the Repository
-프로젝트를 로컬로 복사하려면 아래 명령어를 사용하세요:
+Clone the project to your local machine:
 ```bash
 git clone https://github.com/se-zero/seyeong.git
 cd seyeong
 ```
 ### 2. Navigate to the Project Folder
-`Termproject` 폴더로 이동합니다:
+Navigate to the `Termproject` folder:
 ```bash
 cd Termproject
 ```
 ### 3. Open the Project in a Browser
-`index.html` 파일을 브라우저에서 엽니다:
+Open the `index.html` file in your browser:
 ```bash
 open index.html
 ```
-(Windows 사용자의 경우 start index.html 명령을 사용할 수 있습니다.)
+For Windows users, use the command `start index.html` instead.)
 ### 4. Explore the Map!
-- 건물을 클릭해 보세요.
-- 사이드바를 통해 각 층의 정보를 확인하세요.
+- Click on a building.
+- Use the sidebar to explore information for each floor.
 
 ## 📄 License
 This project is licensed under the **MIT License**. For more details, refer to the [LICENSE](LICENSE) file.
@@ -88,7 +89,7 @@ This project is licensed under the **MIT License**. For more details, refer to t
 ## 📖 References
 - [Leaflet.js](https://leafletjs.com)
 - [Pannellum.js](https://pannellum.org)
-- 일부 오픈소스 및 레퍼런스 코드를 기반으로 작성되었으며, 사용한 코드의 출처는 위에 명시되어 있습니다.
+- This project incorporates references and code from open-source libraries, which are cited above.
 
 
 
