@@ -23,8 +23,9 @@ This project aims to address the following two challenges:
 Click the link above to directly experience the project!
 
 ## 🎥 Demo Video
-[Watch the demo](./Term%20project/demo-video.mp4)  
-_(Click the link to watch the demo video.)_
+![Demo Video](./Term%20project/demo_video/demo1.gif)
+![Demo Video](./Term%20project/demo_video/demo2.gif)
+![Demo Video](./Term%20project/demo_video/demo3.gif)
 
 ## 💡 Features
 - **Campus Map Navigation**: Visually check major buildings and their boundaries.
