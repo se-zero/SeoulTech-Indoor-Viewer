@@ -625,7 +625,7 @@ export const buildingFloorScenes = {
                 ]
             },
             4: { 
-                firstScene: 'Chanjo_Hall/Chanjo_4.jpg', // 4층 찍기
+                firstScene: 'Chanjo_Hall/Chanjo_4.jpg', 
                 scenes: [
                     {
                         image: 'Chanjo_Hall/Chanjo_4.jpg',
@@ -691,7 +691,7 @@ export const buildingFloorScenes = {
                 ]
             },
             4: {
-                firstScene: 'Frontier_Hall/Frontier_4.jpg', //다시찍기(안해도 그만)
+                firstScene: 'Frontier_Hall/Frontier_4.jpg', 
                 scenes: [
                     {
                         image: 'Frontier_Hall/Frontier_4.jpg', 

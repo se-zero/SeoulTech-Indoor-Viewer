@@ -1,7 +1,7 @@
 // 지도 초기화 및 OpenStreetMap 타일 추가
 function initializeMap() {
     const map = L.map('map', {
-        center: [37.6325, 127.0774], //37.6315, 127.0774
+        center: [37.6325, 127.0774], 
         zoom: 16,
         minZoom: 16,
         maxZoom: 19
@@ -24,7 +24,7 @@ function initializeMap() {
 // 초기화 함수 호출
 const map = initializeMap();
 
-import { handleBuildingClick } from './buildingController.js'; // handleBuildingClick 가져오기
+import { handleBuildingClick } from './buildingController.js'; 
 
 const buildings = [
     // 학교 테두리
@@ -116,8 +116,8 @@ const buildings = [
             [37.6318815, 127.0804461],
             [37.6319468, 127.0804649], 
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 다산관 테두리(2) 
     {
@@ -133,8 +133,8 @@ const buildings = [
             [37.6321996, 127.0780678],
             [37.6321049, 127.0784721]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 창학관 테두리(3) 
     {
@@ -146,8 +146,8 @@ const buildings = [
             [37.6320295, 127.0799457],
             [37.6322718, 127.0789447]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 혜성관 테두리(5)
     {
@@ -173,8 +173,8 @@ const buildings = [
             [37.6318636, 127.0818569],
             [37.6317268, 127.0818637]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 청운관 테두리(6)
     {
@@ -192,8 +192,8 @@ const buildings = [
             [37.6339515, 127.0804279],
             [37.6335037, 127.0802655]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 테크노 파크 테두리(7)
     {
@@ -205,8 +205,8 @@ const buildings = [
             [37.6343488, 127.0810357],
             [37.6344779, 127.0805180]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     {
         name: "Technopark",
@@ -217,8 +217,8 @@ const buildings = [
             [37.6344418, 127.0803825],
             [37.6345110, 127.0800559]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 창조관 테두리(8)
     {
@@ -234,8 +234,8 @@ const buildings = [
             [37.6347597, 127.0793083],
             [37.6348415, 127.0789993]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 프론티어관 테두리(32) 
     {
@@ -249,8 +249,8 @@ const buildings = [
             [37.6311385, 127.0758419],
             [37.6316058, 127.0760002]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 하이테크관 테두리(33) 
     {
@@ -271,8 +271,8 @@ const buildings = [
             [37.6321705, 127.0769061],
             [37.6323620, 127.0769686]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red',
+        alwaysVisible: false 
     },
     // 중앙도서관(34)
     {
@@ -284,8 +284,8 @@ const buildings = [
             [37.6327627, 127.0771022],
             [37.6329443, 127.0763196]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     //도서관 별관(35)
     {
@@ -301,8 +301,8 @@ const buildings = [
             [37.6338639, 127.0764982],
             [37.6338698, 127.0764802]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 제1학생회관 테두리(37)
     {
@@ -316,8 +316,8 @@ const buildings = [
             [37.6340631, 127.0768832],
             [37.6341332, 127.0766047]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 국제관 테두리(38)
     {
@@ -337,8 +337,8 @@ const buildings = [
             [37.6349908, 127.0772703],
             [37.6349987, 127.0772296]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 다빈치관 테두리(39)
     {
@@ -358,8 +358,8 @@ const buildings = [
             [37.6353843, 127.0785315],
             [37.6354342, 127.0783050]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 어의관 테두리(40)
     {
@@ -371,8 +371,8 @@ const buildings = [
             [37.6348364, 127.0766788],
             [37.6349058, 127.0764499]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 불암학사 테두리(41)
     {
@@ -391,8 +391,8 @@ const buildings = [
             [37.6364355, 127.0761156],
             [37.6363549, 127.0764181]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // KB학사 테두리(42)
     {
@@ -428,8 +428,8 @@ const buildings = [
             [37.6360707, 127.0758591],
             [37.6360785, 127.0758290]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 성림학사(1) 테두리(43)
     {
@@ -447,8 +447,8 @@ const buildings = [
             [37.6353460, 127.0756849],
             [37.6353633, 127.0756182]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false
     },
     // 성림학사(2) 테두리(43)
     {
@@ -465,8 +465,8 @@ const buildings = [
             [37.6352258, 127.0755657]
 
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 수림학사 테두리(45)
     {
@@ -479,8 +479,8 @@ const buildings = [
             [37.6363028, 127.0785632]
 
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 누리학사 테두리(46)
     {
@@ -504,8 +504,8 @@ const buildings = [
             [37.6345893, 127.0769916],
             [37.6347627, 127.0770507]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 100주년 기념관 테두리 (51)
     {
@@ -527,8 +527,8 @@ const buildings = [
             [37.6305915, 127.0783427],
             [37.6306635, 127.0779156]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 제2학생회관(52)
     {
@@ -544,8 +544,8 @@ const buildings = [
             [37.6308342, 127.0791289],
             [37.6308515, 127.0790256]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 상상관 테두리(53)
     {
@@ -559,8 +559,8 @@ const buildings = [
             [37.6310654, 127.0800501],
             [37.6310686, 127.0801057]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 아름관 테두리(54)
     {
@@ -595,8 +595,8 @@ const buildings = [
             [37.6297885, 127.0803058],
             [37.6297860, 127.0803287]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 체육관 테두리(55)
     {
@@ -612,8 +612,8 @@ const buildings = [
             [37.6291029, 127.0791570],
             [37.6292936, 127.0792087]
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false 
     },
     // 대륙관 테두리(56)
     {
@@ -640,8 +640,8 @@ const buildings = [
             [37.6293058, 127.0798671]
 
         ],
-        color: 'pink', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'pink', 
+        alwaysVisible: false
     },
     // 무궁관 테두리(57)
     {
@@ -653,8 +653,8 @@ const buildings = [
             [37.6307809, 127.0819673],
             [37.6308942, 127.0812341]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 무궁관A 테두리(57)
     {
@@ -666,8 +666,8 @@ const buildings = [
             [37.6303019, 127.0818109],
             [37.6304688, 127.0818511]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 미래관 테두리(60)
     {
@@ -698,8 +698,8 @@ const buildings = [
             [37.6297415, 127.0812793],
             [37.6297845, 127.0812884]
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     },
     // 테크노큐브 테두리(62)
     {
@@ -711,8 +711,8 @@ const buildings = [
             [37.6296920, 127.0801573],
             [37.6299593, 127.0802182],
         ],
-        color: 'red', // 기본 테두리 색상
-        alwaysVisible: false // hover 효과 적용
+        color: 'red', 
+        alwaysVisible: false 
     }
 ]
 
@@ -746,7 +746,7 @@ function applyHoverEffect(layer, building) {
         layer.bindTooltip(building.tooltipName, {
             permanent: false,
             direction: 'top',
-            offset: L.point(8, -5), // 툴팁 위치 미세 조정
+            offset: L.point(8, -5), 
             className: 'custom-tooltip'
         });
 

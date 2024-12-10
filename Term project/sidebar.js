@@ -1,4 +1,4 @@
-import { showBuildingFloorView } from './roadview.js'; // 로드뷰 표시 함수 가져오기
+import { showBuildingFloorView } from './roadview.js'; 
 
 // 사이드바 열고 닫기 기능을 `sidebar-toggle` 버튼에만 적용
 function toggleSidebar() {
@@ -65,7 +65,6 @@ const buildingFloors = {
     Mugung_Hall_A: [1,2,3,4],
     Mirae_Hall: ['B1',1, 2, 3, 4, 5],
     Techno_Cube: [1,2,3,4,5,6,7,8,9,10,11,12]
-    // 필요한 다른 건물 추가
 };
 
 // 사이드바에 층수 표시 (사이드바를 항상 나타나게 설정)
