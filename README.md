@@ -73,7 +73,7 @@ Open the `index.html` file in your browser:
 ```bash
 open index.html
 ```
-(For Windows users, use the command start `index.html` instead.)
+(For Windows users, use the command `start index.html` instead.)
 ### 3. Explore the Map!
 - Click on a building.
 - Use the sidebar to explore information for each floor.
