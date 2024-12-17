@@ -19,13 +19,13 @@ This project aims to address the following two challenges:
 
 
 ## 🌐 Live Demo
-[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/Term%20project/)  
+[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/)  
 Click the link above to directly experience the project!
 
 ## 🎥 Demo Video
-![Demo Video](./Term%20project/demo_video/demo1.gif)
-![Demo Video](./Term%20project/demo_video/demo2.gif)
-![Demo Video](./Term%20project/demo_video/demo3.gif)
+![Demo Video](./demo_video/demo1.gif)
+![Demo Video](./demo_video/demo2.gif)
+![Demo Video](./demo_video/demo3.gif)
 
 ## 💡 Features
 - **Campus Map Navigation**: Visually check major buildings and their boundaries.
@@ -47,18 +47,17 @@ Click the link above to directly experience the project!
 ```plaintext
 seyeong/
 ├── README.md                 # Root directory README file
-└── Termproject/
-    ├── index.html
-    ├── style.css
-    ├── mapLayers.js
-    ├── roadview.js
-    ├── sidebar.js
-    ├── buildingController.js
-    ├── buildingDescriptions.js
-    ├── Eoui_Hall/
-    ├── Mirae_Hall/
-    ├── Hi_Tech_Hall/
-    └── ...  
+├── index.html
+├── style.css
+├── mapLayers.js
+├── roadview.js
+├── sidebar.js
+├── buildingController.js
+├── buildingDescriptions.js
+├── Eoui_Hall/
+├── Mirae_Hall/
+├── Hi_Tech_Hall/
+└── ...  
 ```
 
 
@@ -69,18 +68,13 @@ Clone the project to your local machine:
 git clone https://github.com/se-zero/seyeong.git
 cd seyeong
 ```
-### 2. Navigate to the Project Folder
-Navigate to the `Termproject` folder:
-```bash
-cd Termproject
-```
-### 3. Open the Project in a Browser
+### 2. Open the Project in a Browser
 Open the `index.html` file in your browser:
 ```bash
 open index.html
 ```
-For Windows users, use the command `start index.html` instead.)
-### 4. Explore the Map!
+(For Windows users, use the command start index.html instead.)
+### 3. Explore the Map!
 - Click on a building.
 - Use the sidebar to explore information for each floor.
 
