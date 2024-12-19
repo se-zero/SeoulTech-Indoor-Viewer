@@ -19,7 +19,7 @@ This project aims to address the following two challenges:
 
 
 ## 🌐 Live Demo
-[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/seyeong/)  
+[SeoulTech Campus Map and Indoor Viewer](https://se-zero.github.io/SeoulTech-Indoor-Viewer/)  
 Click the link above to directly experience the project!
 
 ## 🎥 Demo Video
@@ -45,7 +45,7 @@ Click the link above to directly experience the project!
 
 ## 📂 Project Structure
 ```plaintext
-seyeong/
+SeoulTech-Indoor-Viewer/
 ├── README.md                 # Root directory README file
 ├── index.html
 ├── style.css
@@ -65,7 +65,7 @@ seyeong/
 ### 1. Clone the Repository
 Clone the project to your local machine:
 ```bash
-git clone https://github.com/se-zero/seyeong.git
+git clone https://github.com/se-zero/SeoulTech-Indoor-Viewer.git
 cd seyeong
 ```
 ### 2. Open the Project in a Browser
